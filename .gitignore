@@ -1,0 +1,8 @@
+
+.terraform
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.*
+
+# don't push this reference dir
+learn-tf-az
