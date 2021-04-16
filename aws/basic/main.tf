@@ -1,4 +1,10 @@
 terraform {
+  backend "remote" {
+    organization = "Gravityloop"
+    workspaces {
+      name = "infraAsCode"
+    }
+  }
   required_providers {
     aws = {
       source  = "hashicorp/aws"
