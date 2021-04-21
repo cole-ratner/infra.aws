@@ -12,14 +12,14 @@ jobs:
     name: "Terraform"
     runs-on: ubuntu-latest
     env:
-      working-directory: "aws/basic/"
+      working-directory: "aws/basic/" # TODO: for monorepo pattern, this needs to be dynamically declared
     steps:
 
-
-    - name: Dump GitHub context
-      env:
-        GITHUB_CONTEXT: ${{ toJSON(github) }}
-      run: echo "$GITHUB_CONTEXT"
+    # reference for debugging purposes https://docs.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions#contexts
+    #- name: Dump GitHub context
+    #  env:
+    #    GITHUB_CONTEXT: ${{ toJSON(github) }}
+    #  run: echo "$GITHUB_CONTEXT"
 
     # Checkout the repository to the GitHub Actions runner
     - name: Checkout
