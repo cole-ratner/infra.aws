@@ -4,9 +4,9 @@ on:
     branches:
     - master
     paths: 
-    - "aws/*"
-    - "azure/*"
-    - "gcp/*"
+    - "aws/*/**"
+    - "azure/*/**"
+    - "gcp/*/**"
 jobs:
   terraform:
     name: 'Terraform'
