@@ -3,6 +3,10 @@ on:
   push:
     branches:
     - master
+    paths: 
+    - "aws/*"
+    - "azure/*"
+    - "gcp/*"
 jobs:
   terraform:
     name: 'Terraform'
