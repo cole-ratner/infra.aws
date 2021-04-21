@@ -3,6 +3,7 @@ on:
   push:
     branches:
     - master
+jobs:
   terraform:
     name: 'Terraform'
     runs-on: ubuntu-latest
