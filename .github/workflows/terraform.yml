@@ -9,10 +9,10 @@ on:
     - "gcp/*/**"
 jobs:
   terraform:
-    name: 'Terraform'
+    name: "Terraform"
     runs-on: ubuntu-latest
     env:
-      working-directory: ${{ env.GITHUB_WORKSPACE }}
+      working-directory: "aws/basic/"
     steps:
 
 
