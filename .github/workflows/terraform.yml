@@ -15,11 +15,11 @@ jobs:
       working-directory: ${{ env.GITHUB_WORKSPACE }}
     steps:
 
-    
+
     - name: Dump GitHub context
-    env:
-      GITHUB_CONTEXT: ${{ toJSON(github) }}
-    run: echo "$GITHUB_CONTEXT"
+      env:
+        GITHUB_CONTEXT: ${{ toJSON(github) }}
+      run: echo "$GITHUB_CONTEXT"
 
     # Checkout the repository to the GitHub Actions runner
     - name: Checkout
