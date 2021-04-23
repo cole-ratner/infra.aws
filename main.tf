@@ -19,7 +19,7 @@ provider "aws" {
 }
 
 module "app_server" {
-  source        = format("%s/app_server", var.custom_module_base_url)
+  source        = format("%s/app_server", lookup(var.custom_module_base_url))
   instance_name = "testInstance"
   ami_id        = "ami-0742b4e673072066f"
 }
