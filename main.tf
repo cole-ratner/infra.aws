@@ -15,7 +15,7 @@ terraform {
 
 provider "aws" {
   profile = "default"
-  region  = lookup(var.region)
+  region  = var.region
 }
 
 module "app_server" {
