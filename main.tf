@@ -21,11 +21,15 @@ provider "aws" {
   region  = var.region
 }
 
+locals {
+  custom_module_base_url = "github.com/cole-ratner/terraform_modules"
+}
+
 # -------------------------------------------------------------------------------------------
 # Defining infra resources to provision by the previously declared provider
 # -------------------------------------------------------------------------------------------
 module "app_server" {
-  source        = format("%s/app_server", var.custom_module_base_url)
+  source        = "${local.custom_module_base_url}/app_server"
   instance_name = "testInstance"
   ami_id        = "ami-0742b4e673072066f"
 }
