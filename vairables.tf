@@ -1,5 +1,5 @@
 variable "custom_module_base_url" {
-  type = string
+  type    = string
   default = "github.com/cole-ratner/terraform_modules"
 }
 
