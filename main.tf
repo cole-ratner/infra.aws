@@ -19,7 +19,7 @@ provider "aws" {
 }
 
 module "app_server" {
-  source = "github.com/cole-ratner/terraform_modules/app_server"
+  source        = "github.com/cole-ratner/terraform_modules/app_server"
   instance_name = "testInstance"
-  ami_id = "ami-0742b4e673072066f"
+  ami_id        = "ami-0742b4e673072066f"
 }
