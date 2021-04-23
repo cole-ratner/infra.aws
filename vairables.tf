@@ -1,5 +1,5 @@
 variable "custom_module_base_url" {
-  type    = string
+  type = string
 }
 
 variable "region" {
